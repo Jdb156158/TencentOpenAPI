@@ -8,7 +8,7 @@ s.description  = <<-DESC
 DESC
 s.homepage     = "https://github.com/Jdb156158/TencentOpenAPI"
 s.license      = { :type => "MIT", :file => "LICENSE" }
-s.author       = { "lu" => "1183843590@qq.com" }
+s.author       = { "lu" => "568071718@qq.com" }
 s.platform     = :ios, "9.0"
 s.source       = { :git => "https://github.com/Jdb156158/TencentOpenAPI.git", :tag => s.version }
 s.requires_arc = true
