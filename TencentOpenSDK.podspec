@@ -1,9 +1,9 @@
 
 Pod::Spec.new do |s|
 
-  s.name                  = 'TencentOpenAPI'
-  s.version               = '3.5.1.1'
-  s.summary               = 'A Mirror For TencentOpenAPI'
+  s.name                  = 'TencentOpenSDK'
+  s.version               = '3.5.1.2'
+  s.summary               = 'A Mirror For TencentOpenSDK'
   s.homepage              = 'https://wiki.connect.qq.com'
   s.ios.deployment_target = '7.0'
   s.license               = { :type => 'MIT', :file => 'LICENSE' }
@@ -15,6 +15,7 @@ Pod::Spec.new do |s|
   s.resource              = 'TencentOpenApi_IOS_Bundle.bundle'
   s.vendored_frameworks   = 'TencentOpenAPI.framework'
   s.requires_arc          = true
+  s.pod_target_xcconfig = { 'VALID_ARCHS' => 'x86_64 armv7 arm64' }
   
 end
 
