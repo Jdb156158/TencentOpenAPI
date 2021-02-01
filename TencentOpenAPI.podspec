@@ -1,19 +1,20 @@
 
 Pod::Spec.new do |s|
-s.name         = "TencentOpenAPI"
-s.version      = "3.5.1"
-s.summary      = "QQ 互联 SDK"
-s.description  = <<-DESC
-提供 QQ 互联 SDK 的 CocoaPods 的集成方式
-DESC
-s.homepage     = "https://github.com/Jdb156158/TencentOpenAPI"
-s.license      = { :type => "MIT", :file => "LICENSE" }
-s.author       = { "lu" => "568071718@qq.com" }
-s.platform     = :ios, "9.0"
-s.source       = { :git => "https://github.com/Jdb156158/TencentOpenAPI.git", :tag => s.version }
-s.requires_arc = true
-s.source_files = 'Classes'
-s.frameworks   = 'Security', 'SystemConfiguration', 'CoreGraphics', 'CoreTelephony', 'WebKit'
-s.libraries    = 'iconv', 'sqlite3', 'stdc++', 'z'
-s.ios.vendored_frameworks = 'TencentOpenAPI.framework'
+
+  s.name                  = 'TencentOpenAPI'
+  s.version               = '3.5.1'
+  s.summary               = 'A Mirror For TencentOpenAPI'
+  s.homepage              = 'https://wiki.connect.qq.com'
+  s.ios.deployment_target = '7.0'
+  s.license               = { :type => 'MIT', :file => 'LICENSE' }
+  s.author                = { 'Dwarven' => 'prison.yang@gmail.com' }
+  s.social_media_url      = 'https://twitter.com/DwarvenYang'
+  s.source                = { :git => 'https://github.com/Jdb156158/TencentOpenAPI.git', :tag => s.version }
+  s.frameworks            = 'Security', 'SystemConfiguration', 'CoreGraphics', 'CoreTelephony', 'WebKit'
+  s.libraries             = 'iconv', 'sqlite3', 'stdc++', 'z'
+  s.resource              = 'TencentOpenApi_IOS_Bundle.bundle'
+  s.vendored_frameworks   = 'TencentOpenAPI.framework'
+  s.requires_arc          = true
+  
 end
+
