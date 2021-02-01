@@ -1,9 +1,9 @@
 
 Pod::Spec.new do |s|
 
-  s.name                  = 'TencentOpenSDK'
-  s.version               = '3.5.1.2'
-  s.summary               = 'A Mirror For TencentOpenSDK'
+  s.name                  = 'TencentOpen'
+  s.version               = '3.5.1.3'
+  s.summary               = 'A Mirror For TencentOpenApiSDK'
   s.homepage              = 'https://wiki.connect.qq.com'
   s.ios.deployment_target = '7.0'
   s.license               = { :type => 'MIT', :file => 'LICENSE' }
