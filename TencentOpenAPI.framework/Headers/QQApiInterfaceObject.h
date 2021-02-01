@@ -45,7 +45,7 @@ typedef NS_ENUM(NSInteger,QQApiSendResultCode) {
 // QQApiObject control flags
 typedef NS_ENUM(NSUInteger,kQQAPICtrlFlag) {
     kQQAPICtrlFlagQZoneShareOnStart = 0x01,
-    kQQAPICtrlFlagQZoneShareForbid = 0x02, //屏蔽好友选择器上的空间入口
+    kQQAPICtrlFlagQZoneShareForbid = 0x02,
     kQQAPICtrlFlagQQShare = 0x04,
     kQQAPICtrlFlagQQShareFavorites = 0x08, //收藏
     kQQAPICtrlFlagQQShareDataline = 0x10,  //数据线
@@ -113,13 +113,6 @@ __attribute__((visibility("default"))) @interface QQApiLaunchMiniProgramObject :
 @property(nonatomic,retain) NSString* miniPath; //小程序的展示路径,不填展示默认小程序首页
 @property(nonatomic,assign) MiniProgramType miniprogramType; //非必填，小程序的类型，默认正式版(3)，可选测试版(1)、开发版(0)
 @end
-
-//小程序唤起第三方 - SDK 3.3.9
-__attribute__((visibility("default"))) @interface QQApiMiniProgramLaunchObject : QQApiObject
-@property(nonatomic,copy) NSString* appParameter; //小程序带来的数据，透传
-+ (instancetype)newWithAppParameter:(NSString*)parameter;
-@end
-
 // QQApiResultObject
 /** \brief 用于请求回应的数据类型。
  <h3>可能错误码及描述如下:</h3>
